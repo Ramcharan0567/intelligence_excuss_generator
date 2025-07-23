@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Intelligent Excuse Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Intelligent Excuse Generator</h1>
+
+    <form id="excuseForm">
+      <label for="scenario">Scenario:</label>
+      <input type="text" id="scenario" required placeholder="e.g. I can't submit my project" />
+
+      <label for="urgency">Urgency:</label>
+      <select id="urgency">
+        <option value="Low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="High">High</option>
+      </select>
+
+      <label for="style">Style:</label>
+      <select id="style">
+        <option value="Funny">Funny</option>
+        <option value="Formal">Formal</option>
+        <option value="Casual">Casual</option>
+      </select>
+
+      <label for="proof">Need Fake Proof?</label>
+      <select id="proof">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Telugu">Telugu</option>
+      </select>
+
+      <button type="submit">Generate Excuse</button>
+    </form>
+
+    <h3>Generated Excuse:</h3>
+    <p id="excuseText">Your excuse will appear here.</p>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

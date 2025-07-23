@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+  padding: 30px;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#excuseText {
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
